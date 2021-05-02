@@ -4,7 +4,7 @@ CowinApp Filter is a Chrome extension which helps users to quickly find the vacc
 
 ## How to Install
 Follow the below steps
-1. Clone the repo to your machine
+1. Download/Clone the repo to your machine
 2. Go to chrome://extensions/ on your Chrome Browser
 3. Enable Developer Mode
 4. Click on "load package" button and select the folder which has manifest.json file
