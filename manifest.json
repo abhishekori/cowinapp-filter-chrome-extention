@@ -10,10 +10,6 @@
   "js": ["addFilter.js"],
   "matches": ["https://selfregistration.cowin.gov.in/appointment"]
 }],
-  "background": {
-    "scripts" : ["filter_vaccine_slots.js"],
-    "persistent": false
-  },
   "permissions": [
     "activeTab"
     ]
