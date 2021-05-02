@@ -1,4 +1,4 @@
-# Cowinapp filter chrome extention
+# Cowinapp filter chrome extension
 
 CowinApp Filter is a Chrome extension which helps users to quickly find the vaccine appointments in CoWin app by filtering by Age
 
