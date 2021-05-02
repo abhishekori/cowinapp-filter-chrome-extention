@@ -4,14 +4,6 @@ https://chrome.google.com/webstore/detail/cowin-app-filter/deolenocoppnlhmppbiam
 
 CowinApp Filter is a Chrome extension which helps users to quickly find the vaccine appointments in CoWin app by filtering by Age
 
-## How to Install
-Follow the below steps
-1. Download/Clone the repo to your desktop computer
-2. Go to chrome://extensions/ on your Chrome Browser
-3. Enable Developer Mode
-4. Click on "load package" button and select the folder which has manifest.json file
-5. You are all Set
-
 ## How to Use
 1. Go to https://www.cowin.gov.in/
 2. Login with your phone number and otp
