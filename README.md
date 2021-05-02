@@ -22,5 +22,5 @@ Follow the below steps
 ### Hope you will find it useful :)
 If you have a feature request or bug please feel free to open an issue
 
-Stay safe - Wear Masks - Practice Social Distancing - Get the Vaccine as soon as possible
+Stay safe - Wear masks - Practice social distancing - Get the vaccine as soon as possible
 # We can beat this!
