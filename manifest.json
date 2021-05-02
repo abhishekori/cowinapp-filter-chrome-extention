@@ -1,31 +1,32 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Cowin App filter",
   "description": "filter available vaccine slots",
-  "version": "1.0",
+  "version": "1.0.1",
   "icons": { 
     "16": "CW16.png",
       "32": "CW32.png",
       "48": "CW48.png",
       "128": "CW128.png"
   },
-  "browser_action": {
-    "default_icon": "CW16.png",
-    "16": "CW16.png",
+  "action": {
+   
+    "default_icon": {
+      "16": "CW16.png",
       "32": "CW32.png",
       "48": "CW48.png",
       "128": "CW128.png"
+    }
+    
 },
 "background": {
-  "scripts":["background.js"]
+  "service_worker":"background.js"
 },
 "content_scripts": [{
   "js": ["addFilter.js"],
   "matches": ["https://selfregistration.cowin.gov.in/*", "https://www.cowin.gov.in/home"]
 }],
   "permissions": [
-    "activeTab",
-    "webNavigation",
     "tabs"
     ]
 }
