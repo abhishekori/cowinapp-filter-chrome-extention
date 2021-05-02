@@ -1,4 +1,4 @@
-var filter = document.getElementsByClassName('register-header md hydrated')
+var filter = document.getElementsByClassName('custom-checkbox')
 var select = document.createElement("SELECT");
 select.id = 'cowinAgeFilter';
 
@@ -22,6 +22,12 @@ option45.appendChild(option45Txt)
 select.appendChild(allOp)
 select.appendChild(option18)
 select.appendChild(option45)
+
+var labelEL = document.createElement('LABEL');
+labelEL.setAttribute('for', 'cowinAgeFilter');
+labelELTxt = document.createTextNode('Age Filter: ');
+labelEL.appendChild(labelELTxt)
+labelEL.style.marginRight='5px';
 
 var onAgeFilterSelect = function() {
     var selectedAge = document.getElementById('cowinAgeFilter').value
@@ -56,5 +62,7 @@ select.addEventListener('change', function(e) {
     onAgeFilterSelect()
 })
 // para.appendChild(select);
+if(location.href === 'https://www.cowin.gov.in/home' || location.href === 'https://www.cowin.gov.in')
+filter[0].appendChild(labelEL)
 filter[0].appendChild(select)
 

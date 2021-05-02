@@ -8,7 +8,7 @@
 },
 "content_scripts": [{
   "js": ["addFilter.js"],
-  "matches": ["https://selfregistration.cowin.gov.in/appointment"]
+  "matches": ["https://selfregistration.cowin.gov.in/appointment", "https://www.cowin.gov.in/home"]
 }],
   "permissions": [
     "activeTab"
