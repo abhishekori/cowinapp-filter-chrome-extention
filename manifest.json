@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Cowin vaccine filter",
+  "description": "filter available vaccine slots",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icon.png"
+},
+"content_scripts": [{
+  "js": ["addFilter.js"],
+  "matches": ["https://selfregistration.cowin.gov.in/appointment"]
+}],
+  "background": {
+    "scripts" : ["filter_vaccine_slots.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "activeTab"
+    ]
+}
