@@ -19,5 +19,5 @@ Follow the below steps
 
 ![Demo Screenshot](https://github.com/abhishekori/cowinapp-filter-chrome-extention/blob/55180a203e41f16d49baa763cb58691da89185b3/App%20screen%20shot.png?raw=true)
 
-###How you find it useful :)
+### Hope you will find it useful :)
 If you have a feature request or bug please feel free to open an issue
