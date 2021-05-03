@@ -115,6 +115,8 @@ var setAllFilters = function () {
                 scanSearchBtn();
             })
         }
+
+        
        
     }
     
