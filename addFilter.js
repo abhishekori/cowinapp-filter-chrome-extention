@@ -91,6 +91,31 @@ var setAllFilters = function () {
                 cowinAdvFilterContainer.appendChild(userMessage)
             }
         }
+        var restFilter = () => {
+            document.getElementById('cowinAgeFilter').value = 'all'
+        }
+        var scanSearchBtn = () => {
+            setTimeout(() => {
+                var xpath = "//ion-button[contains(text(),'Search')]";
+                var matchingElement = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+                if(matchingElement) {
+                    matchingElement.addEventListener('click', function() {
+                        restFilter()
+                    })
+                }
+            }, 500)
+        }
+       
+       
+        scanSearchBtn();
+        var customCheckbox = document.getElementsByClassName('custom-checkbox')
+        if(customCheckbox.length){
+            customCheckbox[0].addEventListener('click', function(params) {
+               
+                scanSearchBtn();
+            })
+        }
+       
     }
     
 }
@@ -99,7 +124,8 @@ chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
      
       if (request.message === 'urlChanged') {
-        setAllFilters(); 
+            setAllFilters(); 
+       
       }
   });
 
